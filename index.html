@@ -1,11 +1,270 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello GitHub Pages</title>
-  </head>
-  <body>
-    <h1>我的第一个 GitHub Pages 网站</h1>
-    <p>成功啦！</p>
-  </body>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>褚峰 / Chu Feng</title>
+  <meta name="description" content="褚峰的个人主页。Personal site of Chu Feng.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 导航栏 / Navigation ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero">
+        <span class="brand-mark">C</span>
+        <span class="zh">褚峰</span><span class="en">Chu Feng</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about"><span class="zh">关于</span><span class="en">About</span></a>
+        <a class="nav-link" href="#experience"><span class="zh">经历</span><span class="en">Experience</span></a>
+        <a class="nav-link" href="#blog"><span class="zh">博客</span><span class="en">Blog</span></a>
+        <a class="nav-link" href="#photography"><span class="zh">相册</span><span class="en">Gallery</span></a>
+        <a class="nav-link" href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Toggle language">
+          <span class="zh">EN</span><span class="en">中文</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 首屏 / Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-avatar">
+        <img src="assets/avatar.jpg" alt="avatar">
+      </div>
+      <h1 class="hero-name">
+        <span class="zh">褚 峰</span><span class="en">Chu Feng</span>
+      </h1>
+      <p class="hero-title">
+        <span class="zh">游戏客户端开发工程师</span>
+        <span class="en">Game Client Developer</span>
+      </p>
+      <p class="hero-intro">
+        <span class="zh">5年游戏开发经验，现任职于网易。曾就职于字节跳动、乐狗游戏等。</span>
+        <span class="en">Game developer with 5 years of experience, currently at NetEase. Previously at ByteDance, Legou Games and more.</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience"><span class="zh">查看履历</span><span class="en">View resume</span></a>
+        <a class="btn btn-ghost" href="#contact"><span class="zh">联系我</span><span class="en">Contact me</span></a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/Cenfugh" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:fun.c@outlook.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#about" aria-label="Scroll down">↓</a>
+  </section>
+
+  <main>
+
+    <!-- ===== 关于 / About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="zh">关于我</span><span class="en">About me</span></h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              <span class="zh">从业五年的游戏开发工程师，先后在字节跳动、乐狗和网易等公司参与多款游戏研发，目前专注于技能、怪物 AI、寻路等核心战斗 Gameplay 开发，曾参与过客户端系统 UI 和引擎工具开发。</span>
+              <span class="en">A game developer with five years of experience, I've worked on multiple titles at ByteDance, Legou and NetEase. I currently focus on core combat gameplay — skills, monster AI and pathfinding — and have also worked on client system UI and engine tooling.</span>
+            </p>
+            <p>
+              <span class="zh">工作之外的爱好是游戏、音乐和摄影，喜欢玩各种单机游戏和主机游戏，比较常听 J-POP，并且是一位尼康佬。</span>
+              <span class="en">Outside of work, I enjoy games, music and photography — I love single-player and console games, listen to a lot of J-POP, and I'm a Nikon guy.</span>
+            </p>
+          </div>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-label"><span class="zh">所在地</span><span class="en">Location</span></span>
+              <span class="fact-value"><span class="zh">浙江 · 杭州</span><span class="en">Hangzhou, Zhejiang</span></span>
+            </div>
+            <div class="fact">
+              <span class="fact-label"><span class="zh">专注方向</span><span class="en">Focus</span></span>
+              <span class="fact-value"><span class="zh">游戏客户端开发</span><span class="en">Game Client Development</span></span>
+            </div>
+            <div class="fact">
+              <span class="fact-label"><span class="zh">常用技术</span><span class="en">Stack</span></span>
+              <div class="fact-value fact-stack">
+                <span>Messiah · Unity · Cocos · UE4</span>
+                <span>Python · Lua · C# · C++</span>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact-label"><span class="zh">邮箱</span><span class="en">Email</span></span>
+              <span class="fact-value">fun.c@outlook.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 工作履历 / Experience ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="zh">工作履历</span><span class="en">Experience</span></h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2024 — <span class="zh">至今</span><span class="en">Present</span></span>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3><span class="zh">高级游戏客户端开发工程师</span><span class="en">Senior Game Client Developer</span></h3>
+              </div>
+              <p class="timeline-org"><span class="zh">网易 · Joker 事业部 · 遗忘之海</span><span class="en">NetEase · Joker Studio · Forgotten Sea</span></p>
+              <p>
+                <span class="zh">负责海战Gameplay开发，怪物AI、寻路、技能、Buff等战斗系统开发与性能优化。</span>
+                <span class="en">Owned naval-combat gameplay, developing combat systems — monster AI, pathfinding, skills and buffs — as well as performance optimization.</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2023 — 2024</span>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3><span class="zh">高级游戏客户端开发工程师</span><span class="en">Senior Game Client Developer</span></h3>
+              </div>
+              <p class="timeline-org"><span class="zh">网易 · 天下事业部 · 猫和老鼠手游</span><span class="en">NetEase · Tianxia Studio · Tom and Jerry: Chase</span></p>
+              <p>
+                <span class="zh">负责客户端系统UI开发，参与了新手活动、春节活动、填色游戏、剧情叙事等客户端系统功能开发。</span>
+                <span class="en">Developed client system UI, working on new-player events, Spring Festival events, a coloring mini-game, narrative storytelling and other client features.</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2022 — 2023</span>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3><span class="zh">游戏客户端开发工程师</span><span class="en">Game Client Developer</span></h3>
+              </div>
+              <p class="timeline-org"><span class="zh">乐狗游戏 · 万国觉醒</span><span class="en">Legou Games · Rise of Kingdoms</span></p>
+              <p>
+                <span class="zh">负责客户端系统UI开发，参与了圣诞节活动、宝石寻访等客户端系统功能开发。</span>
+                <span class="en">Developed client system UI, working on the Christmas event, Gem Hunt and other client features.</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2021 — 2022</span>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3><span class="zh">游戏客户端开发工程师</span><span class="en">Game Client Developer</span></h3>
+              </div>
+              <p class="timeline-org"><span class="zh">字节跳动 · 朝夕光年 · 绿洲</span><span class="en">ByteDance · Nuverse · Oasis</span></p>
+              <p>
+                <span class="zh">MiniGame项目中负责同步与战斗系统开发。正式项目中参与了任务UI等客户端系统开发、资源检查工具引擎插件开发、UGC小游戏客户端与编辑器开发。</span>
+                <span class="en">On the MiniGame project, built the sync and combat systems. On the main project, worked on client systems such as quest UI, a resource-checking engine plugin, and the UGC mini-game client and editor.</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2017 — 2021</span>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3><span class="zh">计算机科学与技术 · 本科</span><span class="en">B.S. in Computer Science</span></h3>
+              </div>
+              <p class="timeline-org"><span class="zh">北京理工大学</span><span class="en">Beijing Institute of Technology</span></p>
+              <p>
+                <span class="zh">曾担任计算机学院本科生数字艺术实验室主任，组织了各种游戏相关活动与游戏开发培训，参与了多次国家数字仿真项目。在校期间还参加过多次校内外举办的ACM和游戏开发比赛，包括Global Game Jam 2019等。</span>
+                <span class="en">Served as head of the undergraduate digital-art lab, organizing various game-related activities and game-dev training, and took part in several national digital simulation projects. Also competed in several ACM and game-dev contests, including Global Game Jam 2019, among others.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 博客 / Blog ===== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="zh">博客</span><span class="en">Blog</span></h2>
+        <div class="post-list">
+          <!-- TODO: 每新增一篇博客，在 blog/ 下新建一个 HTML 文件，并在这里加一条链接 -->
+          <a class="post-item reveal" href="blog/hello-world.html">
+            <div class="post-meta">
+              <span class="post-date">2025-06-14</span>
+              <span class="post-tag">#<span class="zh">示例</span><span class="en">Example</span></span>
+            </div>
+            <h3 class="post-title">Hello World</h3>
+            <p class="post-excerpt">
+              <span class="zh">一篇用于占位和示例的博客文章。</span>
+              <span class="en">A placeholder and example blog post.</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 摄影 / Photography ===== -->
+    <section class="section section-alt" id="photography">
+      <div class="container">
+        <!-- 相册：src 为缩略图（thumb/），data-full 为原图（full/），点击灯箱显示原图 -->
+        <div class="photo-grid reveal">
+          <figure class="photo-item" data-full="assets/photos/full/photo-1.jpg">
+            <img src="assets/photos/thumb/photo-1.webp" alt="Photo 1" loading="lazy" decoding="async">
+          </figure>
+          <figure class="photo-item" data-full="assets/photos/full/photo-2.jpg">
+            <img src="assets/photos/thumb/photo-2.webp" alt="Photo 2" loading="lazy" decoding="async">
+          </figure>
+          <figure class="photo-item" data-full="assets/photos/full/photo-3.jpg">
+            <img src="assets/photos/thumb/photo-3.webp" alt="Photo 3" loading="lazy" decoding="async">
+          </figure>
+          <figure class="photo-item" data-full="assets/photos/full/photo-4.jpg">
+            <img src="assets/photos/thumb/photo-4.webp" alt="Photo 4" loading="lazy" decoding="async">
+          </figure>
+          <figure class="photo-item" data-full="assets/photos/full/photo-5.jpg">
+            <img src="assets/photos/thumb/photo-5.webp" alt="Photo 5" loading="lazy" decoding="async">
+          </figure>
+          <figure class="photo-item" data-full="assets/photos/full/photo-6.jpg">
+            <img src="assets/photos/thumb/photo-6.webp" alt="Photo 6" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系 / Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title reveal"><span class="zh">联系我</span><span class="en">Get in touch</span></h2>
+        <p class="section-sub reveal">
+          <span class="zh">无论是工作机会、合作，还是只想打个招呼，都欢迎给我发邮件。</span>
+          <span class="en">Whether it's a job opportunity, a collaboration, or just a hello — feel free to email me.</span>
+        </p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:fun.c@outlook.com"><span class="zh">发送邮件</span><span class="en">Send email</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> Cenfugh</p>
+    </div>
+  </footer>
+
+  <!-- 灯箱 / Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">×</button>
+    <div class="lightbox-spinner" id="lightbox-spinner"></div>
+    <img src="" alt="" id="lightbox-img">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
